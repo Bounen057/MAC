@@ -1,0 +1,2 @@
+/Users/takaya/Desktop/Unity_projects/3D_MAC/obj/Debug/PhotonUnityNetworking.csproj.AssemblyReference.cache
+/Users/takaya/Desktop/Unity_projects/3D_MAC/obj/Debug/PhotonUnityNetworking.csproj.CoreCompileInputs.cache
