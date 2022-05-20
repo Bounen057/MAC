@@ -12,7 +12,7 @@ public class ItemSlot : MonoBehaviour
     private Inventory inventory;
     private Image image;
     private TextMeshProUGUI text;
-    // private Item item;
+    private Item item;
 
     void Start()
     {
@@ -20,12 +20,12 @@ public class ItemSlot : MonoBehaviour
         inventory = inventoryManager.GetComponent<Inventory>();
         image = this.transform.Find("icon").GetComponent<Image>();
         text = this.transform.Find("amount").GetComponent<TextMeshProUGUI>();
-        // item = inventory.items[slot];
+        item = inventory.items[slot];
     }
 
     void FixedUpdate()
     {
-         if(inventory.items[slot] != null)
+        if(!new IsNull().Judge(inventory.items[slot]))
         {
             image.sprite = inventory.items[slot].icon;
             text.text = inventory.items[slot].amount.ToString();
@@ -33,32 +33,32 @@ public class ItemSlot : MonoBehaviour
         else
         {
             image.sprite = null;
-            text.text = null;
+            text.text = "null_dayo";
         }
     }
 
     public void OnClick()
     {
-        if (inventory.items[slot] == null)
+        if (new IsNull().Judge(inventory.items[slot]))
         {
-            if (inventory.item_cursor == null) {
+            if (new IsNull().Judge(inventory.itemCursor)) {
             }
             else
             {
-                inventory.items[slot] = inventory.item_cursor;
-                inventory.item_cursor = null;
+                inventory.items[slot] = inventory.itemCursor;
+                inventory.itemCursor = null;
             }
         }
         else
         {
-            if(inventory.item_cursor == null)
+            if(new IsNull().Judge(inventory.itemCursor))
             {
-                inventory.item_cursor = inventory.items[slot];
+                inventory.itemCursor = inventory.items[slot];
                 inventory.items[slot] = null;
             }
             else
             {
-                (inventory.items[slot], inventory.item_cursor) = (inventory.item_cursor, inventory.items[slot]);
+                (inventory.items[slot], inventory.itemCursor) = (inventory.itemCursor, inventory.items[slot]);
             }
 
         }

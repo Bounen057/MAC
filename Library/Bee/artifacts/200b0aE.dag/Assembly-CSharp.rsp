@@ -384,6 +384,7 @@
 "Assets/Scenes/items/DroppedItemManager.cs"
 "Assets/Scenes/items/IdToName.cs"
 "Assets/Scenes/items/Inventory.cs"
+"Assets/Scenes/items/IsNull.cs"
 "Assets/Scenes/items/Item.cs"
 "Assets/Scenes/items/ItemMeta.cs"
 "Assets/Scenes/items/ItemSlot.cs"

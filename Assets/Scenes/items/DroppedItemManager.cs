@@ -5,18 +5,6 @@ using UnityEngine;
 
 public class DroppedItemManager : MonoBehaviourPunCallbacks
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void drop_item(Item item, Vector3 position)
     {
         if (PhotonNetwork.IsMasterClient)
@@ -33,9 +21,9 @@ public class DroppedItemManager : MonoBehaviourPunCallbacks
 
             Debug.Log("DroppedModel / " + new IdToName().GetName(id));
 
-            PhotonNetwork.InstantiateRoomObject("DroppedModel/" + new IdToName().GetName(id), position, Quaternion.identity);
+            GameObject obj = PhotonNetwork.InstantiateRoomObject("DroppedModel/" + new IdToName().GetName(id), position, Quaternion.identity);
             
-            // obj.GetComponent<DroppedItem>().item = new Item(id, null, 1);
+            obj.GetComponent<DroppedItem>().item = new Item(id, null, 1);
         }
     }
 }

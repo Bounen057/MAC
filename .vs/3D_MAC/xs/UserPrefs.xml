@@ -1,0 +1,47 @@
+﻿<Properties StartupConfiguration="{322D831D-784C-F770-7A7E-DB4388AD47AF}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scenes/items/IdToName.cs">
+    <Files>
+      <File FileName="Assets/Scenes/objects/block.cs" Line="33" Column="69" />
+      <File FileName="Assets/Scenes/items/DroppedItemManager.cs" Line="27" Column="10" />
+      <File FileName="Assets/Scenes/items/Item.cs" Line="33" Column="6" />
+      <File FileName="Assets/Scenes/items/Inventory.cs" Line="13" Column="41" />
+      <File FileName="Assets/Scenes/items/ItemSlot.cs" Line="28" Column="33" />
+      <File FileName="Assets/Scenes/items/DroppedItem.cs" Line="28" Column="84" />
+      <File FileName="Assets/Scenes/scripts/PlayerControl.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scenes/objects/HpBar.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scenes/scripts/NetworkManager.cs" Line="15" Column="45" />
+      <File FileName="Assets/Scenes/items/ItemMeta.cs" Line="12" Column="26" />
+      <File FileName="Assets/Scenes/items/IdToName.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scenes/items/IsNull.cs" Line="10" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="3D_MAC" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scenes" expanded="True">
+                <Node name="items" expanded="True">
+                  <Node name="IdToName.cs" selected="True" />
+                </Node>
+                <Node name="objects" expanded="True" />
+                <Node name="scripts" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c5ba326e-6f0a-4699-82ef-c12781824f65" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
